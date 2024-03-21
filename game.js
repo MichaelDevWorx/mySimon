@@ -16,7 +16,8 @@ $(document.body).on("keypress", function () {
 
 $(".btn").on("click", function () {
     if (level === 0) {
-        $("h1").fadeOut(200).fadeIn(200).fadeOut(100).fadeIn(100).fadeOut(50).fadeIn(50);
+        $("#level-title").text("Level " + level);
+        nextSequence();
     } 
     else {
         let userChosenColor = $(this).attr("id");
